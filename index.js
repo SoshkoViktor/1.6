@@ -3,6 +3,8 @@ const logo = document.querySelector(".logo");
 
 const resetFilter = () => {
   const cards = document.querySelectorAll(".card");
+  const activeButton = document.querySelector(".button.active");
+  activeButton?.classList.remove("active");
 
   for (el of cards) {
     el.classList.remove("hidden");
@@ -32,3 +34,4 @@ const buttonHandler = (e) => {
 
 btnWrapper.addEventListener("click", buttonHandler);
 logo.addEventListener("click", resetFilter);
+
