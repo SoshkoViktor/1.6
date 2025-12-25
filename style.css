@@ -7,6 +7,14 @@
   font-family: "Roboto", sans-serif;
 }
 
+.fg2 {
+  flex-grow: 2;
+}
+
+.fg3 {
+  flex-grow: 3;
+}
+
 .logo {
   position: relative;
   margin: 40px 0;
@@ -39,6 +47,7 @@
 
 .fieldset {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   border: none;
 }
@@ -60,6 +69,10 @@
   &:hover {
     cursor: pointer;
   }
+
+  @media (max-width: 652px) {
+    margin: 10px;
+  }
 }
 
 .container,
@@ -69,7 +82,7 @@
 
 .container {
   justify-content: center;
-  width: 76%;
+  max-width: 1140px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
@@ -80,10 +93,33 @@
   &.hidden {
     display: none;
   }
+
+  @media (max-width: 1140px) {
+    width: 50%;
+  }
+
+  @media (max-width: 910px) {
+    width: 480px;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+  }
+}
+
+.img {
+  min-width: 237px;
+  align-self: flex-start;
+  @media (max-width: 480px) {
+    width: 100%;
+  }
 }
 
 .text-block {
   margin-left: 10px;
+  @media (max-width: 480px) {
+    margin: 10px 0;
+  }
 }
 
 .h-wrapper {
@@ -116,7 +152,7 @@
 .card-text {
   font-size: 15px;
   line-height: 146%;
-  margin-bottom: 42px;
+  margin-bottom: 6px;
 }
 
 .card-a {
