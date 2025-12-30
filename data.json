@@ -1,0 +1,81 @@
+[{
+    "header": "Red smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "red-fox",
+    "image": "./assets/red-smile.png",
+    "imageM": "./assets/red-smile-m.png"
+    },
+{
+    "header": "Pet smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "pet-fox",
+    "image": "./assets/pet-smile.png",
+    "imageM": "./assets/pet-smile-m.png"
+    },
+    {
+    "header": "Pet smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "pet-fox",
+    "image": "./assets/pet-smile-fox.png",
+    "imageM": "./assets/pet-smile-fox-m.png"
+    },
+    {
+    "header": "Kit smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "kit-fox",
+    "image": "./assets/kit-smile.png",
+    "imageM": "./assets/kit-smile-m.png"
+    },
+    {
+    "header": "Arctic smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "arctic-fox",
+    "image": "./assets/arctic-smile.png",
+    "imageM": "./assets/arctic-smile-m.png"
+    },
+     {
+    "header": "Fennec smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "fennec-fox",
+    "image": "./assets/fennec-smile.png",
+    "imageM": "./assets/fennec-smile-m.png"
+    },
+    {
+    "header": "Kit smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "kit-fox",
+    "image": "./assets/kit-smile-fox.png",
+    "imageM": "./assets/kit-smile-fox-m.png"
+    },
+    {
+    "header": "Red smile fox",
+    "likes":"2546",
+    "text": "Lorem ipsum dolor sit amet, eu mei posse possim atomorum, vix cu fab assueverit. Vel ad option partiendo maiestatis, nec affert appetere.",
+    "link": "#",
+    "linkText": "Read more >>",
+    "key": "red-fox",
+    "image": "./assets/red-smile-fox.png",
+    "imageM": "./assets/kit-smile-fox-m.png"
+    }
+]

@@ -60,6 +60,7 @@
   background: #fff;
   color: #ff3d00;
   border-radius: 4px;
+  flex-grow: 3;
 
   &.active {
     color: #fff;
@@ -70,9 +71,10 @@
     cursor: pointer;
   }
 
-  @media (max-width: 652px) {
+  @media (max-width: 1140px) {
     margin: 10px;
   }
+
 }
 
 .container,
