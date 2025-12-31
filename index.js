@@ -44,7 +44,12 @@ const createButton = (key, value, handler) => {
   button.dataset.key = key;
   button.innerText = value.replace('smile','');
 
-  button.addEventListener("click", () => handler(key));
+  button.addEventListener("click", (e) => {
+    const active = document.querySelector('.button.active');
+    active?.classList.remove('active');
+    e.target.classList.add('active');
+    handler(key);
+  });
 
   return button;
 };
