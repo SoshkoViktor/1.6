@@ -1,57 +1,26 @@
 const container = document.getElementById("container");
 const logo = document.getElementById("logo");
 const buttonWrapper = document.getElementById("btn-wrapper");
+let dataArr = [];
 
-const getData = async (key) => {
+const resetActiveButton = () => {
+    const activeButton = document.querySelector('.button.active');
+    activeButton?.classList.remove('active');
+}
+
+const getData = async () => {
     const data = await fetch("./data.json").then((res) => res.json());
-   if (key) {
-        const filterData = data.filter((obj) => obj.key === key) ;  
-        
-        return filterData;
-    }
-
-  return data;
+     return data;
 };
 
-const buttonHandler = async (key) => {
-    const data = await getData(key);
-    renderCards(data);
-};
+
+const filterCards = (key, arr) => arr.filter((obj) => obj.key === key)
 
 const renderCards = async (arr) => {
     container.innerHTML = '';
     arr.forEach((obj) => {
         container.innerHTML += createCard(obj);
     });
-};
-
-const renderButtons = async (arr, handler) => {
-        buttonWrapper.innerHTML = '';
-        const uniqueKeys = {};
-        arr.forEach((obj) => {
-        if (!uniqueKeys[obj.key]) {
-            uniqueKeys[obj.key] = obj.header;
-            buttonWrapper.appendChild(createButton(obj.key, obj.header, handler));
-        }
-    });
-
- }
-
-const createButton = (key, value, handler) => {
-  const button = document.createElement("button");
-  button.classList.add("button");
-  button.type = "button";
-  button.dataset.key = key;
-  button.innerText = value.replace('smile','');
-
-  button.addEventListener("click", (e) => {
-    const active = document.querySelector('.button.active');
-    active?.classList.remove('active');
-    e.target.classList.add('active');
-    handler(key);
-  });
-
-  return button;
 };
 
 
@@ -80,10 +49,28 @@ const createCard = (obj) => {
 
 const init = async () => {
     const data = await getData();
-    renderButtons(data, buttonHandler);
+    resetActiveButton();
     renderCards(data);
+    dataArr = [];
+    dataArr.push(...data);
 }
+
+buttonWrapper.addEventListener('click', (e) => {
+
+    if (e.target.classList.contains('active') || ! e.target.classList.contains('button')) return;
+    const key = e.target.dataset.key;
+    resetActiveButton();
+    e.target.classList.add('active');
+    
+    const filteredArr = filterCards(key, dataArr);
+    renderCards(filteredArr);
+})
+
 
 logo.addEventListener('click', init)
 
 init();
+
+
+
+
